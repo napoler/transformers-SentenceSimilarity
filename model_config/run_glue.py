@@ -74,7 +74,7 @@ def main():
         model_args, data_args, training_args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))
     else:
         model_args, data_args, training_args = parser.parse_args_into_dataclasses()
-    print(model_args)
+    
     if (
         os.path.exists(training_args.output_dir)
         and os.listdir(training_args.output_dir)
@@ -130,7 +130,7 @@ def main():
         model_args.model_name_or_path,
         from_tf=bool(".ckpt" in model_args.model_name_or_path),
         config=config,
-        cache_dir=if model_args.cache_dir else None,
+        cache_dir=model_args.cache_dir,
     )
 
     # Get datasets
