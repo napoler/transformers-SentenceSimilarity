@@ -1,10 +1,9 @@
 ###########
 # site.title, site.author.name
 
-title:  Strange Case of Dr. Jekyll and Mr. Hyde
+title:  基于Bert的同义句训练
 author:
-  name: Robert Louis Stevenson
-
+  name: Terry Chan
 
 ########
 # more settings
