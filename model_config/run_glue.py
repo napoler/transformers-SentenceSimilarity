@@ -135,7 +135,9 @@ def main():
 
     # Get datasets
     train_dataset = (
-        GlueDataset(data_args, tokenizer=tokenizer, cache_dir=model_args.cache_dir) if training_args.do_train else None
+        GlueDataset(data_args, tokenizer=tokenizer, cache_dir=model_args.cache_dir)
+        if training_args.do_train
+        else None
     )
     eval_dataset = (
         GlueDataset(data_args, tokenizer=tokenizer, mode="dev", cache_dir=model_args.cache_dir)
