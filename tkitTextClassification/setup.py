@@ -17,12 +17,14 @@ def read_requirements(filename):
 long_description="""
 
 这里是说明
-文本分类
+文本相似匹配
 
+更多说明前往
+https://www.terrychan.org/transformers-SentenceSimilarity/
 """
 setup(
     name='tkitTextClassification',
-    version='0.0.0.1',
+    version='0.0.0.2',
     description='Terry toolkit',
     author='Terry Chan',
     author_email='napoler2008@gmail.com',
