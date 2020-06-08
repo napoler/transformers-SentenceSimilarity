@@ -2,3 +2,5 @@ _site/
 tkitTextClassification/build/
 tkitTextClassification/dist/
 *.egg-info/
+
+tkitTextClassification/tkitTextClassification/__pycache__/
